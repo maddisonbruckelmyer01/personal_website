@@ -38,7 +38,7 @@ class Nav extends Component {
                             GitHub</a>
                             </Button>
                         <Button color="inherit">
-                            <a href="www.linkedin.com/in/maddison-bruckelmyer" 
+                            <a href="https://linkedin.com/in/maddison-bruckelmyer" 
                             target="_blank">
                                 Linkedin
                             </a></Button>
