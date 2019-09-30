@@ -5,6 +5,9 @@ import ToolBar from '@material-ui/core/Toolbar';
 import Typography from '@material-ui/core/Typography';
 import Button from '@material-ui/core/Button';
 import IconButton from '@material-ui/core/IconButton';
+import Avatar from '@material-ui/core/Avatar';
+import MainPage from '../MainPage/MainPage';
+import photo from './Maddison.jpg';
 
 const styles = {
     root: {
@@ -16,6 +19,11 @@ const styles = {
     menuButton: {
         marginLeft: -12,
         marginRight: 20
+    },
+    bigAvatar: {
+        margin: 10,
+        width: 60,
+        height: 60
     }
 };
 
@@ -29,6 +37,8 @@ class Nav extends Component {
                         <IconButton className={classes.menuButton} color="inherit" aria-label="Menu">
                             
                         </IconButton> 
+                            <Avatar alt="Maddison Bruckelmyer"
+                                src={photo} className={classes.bigAvatar} />
                         <Typography variant="h6" color="inherit" className={classes.grow}>
                             Maddison Bruckelmyer
                         </Typography>
@@ -44,6 +54,7 @@ class Nav extends Component {
                             </a></Button>
                     </ToolBar>
                 </AppBar>
+                <MainPage />
             </div>
         )
     }
